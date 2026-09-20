@@ -7,14 +7,19 @@ public class S03_CustomPolygonMesh_Square : MonoBehaviour
     {
         Vector3[] vertices = new Vector3[]
         {
-            new Vector3(0f, 1f, 0f),    // v0
-            new Vector3(1f, 1f, 0f),    // v1
-            new Vector3(-1f, -0.5f, 0f) // v2
+            new Vector3(0f, 0f, 0f),    // v0
+            new Vector3(0f, 0f, 1f),    // v1
+            new Vector3(0f, 1f, 0f),    // v2
+            new Vector3(0f, 1f, 1f),    // v3
+            new Vector3(1f, 1f, 0f),    // v4
+            new Vector3(1f, 1f, 1f),    // v5
+            new Vector3(1f, 0f, 0f),    // v6
+            new Vector3(1f, 0f, 1f),    // v7
         };
 
         int[] triangles = new int[]
         {
-            0, 1, 2
+            1, 5, 6
         };
 
         Mesh mesh = new Mesh();

@@ -15,12 +15,14 @@ public class S03_CustomPolygonMesh_Square : MonoBehaviour
             new Vector3(1f, 1f, 1f),    // v5
             new Vector3(1f, 0f, 0f),    // v6
             new Vector3(1f, 0f, 1f),    // v7
+            new Vector3(0.5f, 1.5f, 0f) // v8 
         };
 
         int[] triangles = new int[]
         {
             0, 2, 4,
-            0, 4, 6
+            0, 4, 6,
+            2, 8, 4
         };
 
         Mesh mesh = new Mesh();
